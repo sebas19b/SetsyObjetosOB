@@ -1,0 +1,59 @@
+// CAlse uno, Set()
+const array = [1, 2, 3, 1, 0, 'sebas', '1']
+const miSet = new Set(array)
+console.log(array);
+console.log(miSet);
+
+miSet.add(12)
+console.log(miSet);
+
+miSet.delete(1)
+console.log(miSet);
+
+//miSet.has(3)
+console.log(miSet.has(3));
+
+miSet.forEach(valor => {
+	console.log(valor)
+})
+//clase dos, Objetos
+
+const obj = {
+	id: 1,
+    name: 'Sebsatian',
+    last: 'Barreto',
+    job: 'Developer',
+    favorite_book: ['last dance', 'the coding']
+} 
+
+console.log(obj.name)
+
+
+// ordenar lista de objetos en funcion de una propiedad 
+
+const listaPeliculas = [
+  {title: 'Titanic', year: 1997},
+  {title: 'Piratas del caribe', year: 2003},
+  {title: 'El ciudadano keane', year: 2007},
+  {title: 'La bruja', year: 1989}
+]
+
+listaPeliculas.sort((a, b) => a.year - b.year)
+
+console.log(listaPeliculas)
+
+// Fechas en js
+
+const fecha = new Date(1997, 0, 16)
+
+const fecha1 = new Date(1997, 0, 16)
+
+const fecha2 = new Date(2001, 0, 16)
+
+console.log(fecha)
+
+// Para comparar fechas es atra vez de milisegundos con .getTime()
+console.log(fecha > fecha2)
+console.log(fecha.getTime() === fecha.getTime())
+console.log(fecha.toLocaleDateString("es-CO"))
+
